@@ -42,6 +42,12 @@ page[size="25x35"] {
     height: 3.5in;
 }
 
+page[size="35x5"] {
+    width: 3.5in;
+    height: 5.0in;
+}
+
+
 /* Default card size */
 .card {
     width:2.5in;
