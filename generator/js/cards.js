@@ -108,6 +108,19 @@ function card_element_subtitle(params, card_data, options) {
     return '<div class="card-element card-subtitle">' + subtitle + '</div>';
 }
 
+function card_element_monster(params, card_data, options) {
+    var race = params[0] || "";
+    var challange = params[1] || "";
+    var result="";
+    result += '<table class="card-element card-monster">';
+    result += '    <tr>';
+    result += '        <td class="card-element card-monster-race">' + race + '</td>';
+    result += '        <td class="card-element card-monster-challange">' + challange + '</td>';
+    result += '    </tr>';
+    result += '</table>';
+    return result;
+}
+
 function card_element_picture(params, card_data, options) {
     var url = params[0] || "";
 	var height = params[1] || "";
@@ -264,6 +277,7 @@ function card_element_empty(params, card_data, options) {
 
 var card_element_generators = {
     subtitle: card_element_subtitle,
+    monster: card_element_monster,
     property: card_element_property,
     rule: card_element_ruler,
     ruler: card_element_ruler,
