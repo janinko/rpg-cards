@@ -217,6 +217,11 @@
     width: 16.6%;
 }
 
+.card-charstats-header {
+    text-align: center;
+    padding: 0;
+}
+
 .card-stats-cell {
     text-align: center;
     padding: 0;
