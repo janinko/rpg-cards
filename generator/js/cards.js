@@ -108,6 +108,19 @@ function card_element_subtitle(params, card_data, options) {
     return '<div class="card-element card-subtitle">' + subtitle + '</div>';
 }
 
+function card_element_monster(params, card_data, options) {
+    var race = params[0] || "";
+    var challange = params[1] || "";
+    var result="";
+    result += '<table class="card-element card-monster">';
+    result += '    <tr>';
+    result += '        <td class="card-element card-monster-race">' + race + '</td>';
+    result += '        <td class="card-element card-monster-challange">' + challange + '</td>';
+    result += '    </tr>';
+    result += '</table>';
+    return result;
+}
+
 function card_element_picture(params, card_data, options) {
     var url = params[0] || "";
 	var height = params[1] || "";
@@ -215,6 +228,26 @@ function card_element_dndstats(params, card_data, options) {
     return result;
 }
 
+function card_element_charstats(params, card_data, options) {
+    var result = "";
+    result += '<table class="card-stats">';
+    result += '    <tbody><tr>';
+    result += '      <th class="card-charstats-header">A</th>';
+    result += '      <th class="card-charstats-header">AC</th>';
+    result += '      <th class="card-charstats-header">HP</th>';
+    result += '      <th class="card-charstats-header">S</th>';
+    result += '    </tr>';
+    result += '    <tr>';
+    result += '      <td class="card-stats-cell">' + params[0] + '</td>';
+    result += '      <td class="card-stats-cell">' + params[1] + '</td>';
+    result += '      <td class="card-stats-cell">' + params[2] + '</td>';
+    result += '      <td class="card-stats-cell">' + params[3] + '</td>';
+    result += '    </tr>';
+    result += '  </tbody>';
+    result += '</table>';
+    return result;
+}
+
 function card_element_bullet(params, card_data, options) {
     var result = "";
     result += '<ul class="card-element card-bullet-line">';
@@ -244,12 +277,14 @@ function card_element_empty(params, card_data, options) {
 
 var card_element_generators = {
     subtitle: card_element_subtitle,
+    monster: card_element_monster,
     property: card_element_property,
     rule: card_element_ruler,
     ruler: card_element_ruler,
     boxes: card_element_boxes,
     description: card_element_description,
     dndstats: card_element_dndstats,
+    charstats: card_element_charstats,
     text: card_element_text,
     bullet: card_element_bullet,
     fill: card_element_fill,
@@ -434,6 +469,8 @@ function card_pages_generate_style(options) {
         case "A5": size = "A5 portrait"; break;
         case "Letter": size = "letter portrait"; break;
         case "25x35": size = "2.5in 3.5in"; break;
+        case "35x5": size = "3.5in 5.0in"; break;
+        case "75x5": size = "7.5in 5.0in"; break;
         default: size = "auto";
     }
 

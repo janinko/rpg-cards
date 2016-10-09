@@ -135,6 +135,21 @@
     font-size: 10pt;
     font-style: italic;
 }
+.card-monster {
+    width: 100%;
+}
+.card-monster-race {
+    width: 100%;
+    height: 18px;
+    margin-bottom: 0.0em;
+    line-height: 18px;
+    font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    font-style: italic;
+}
+.card-monster-challange {
+    white-space: nowrap;
+}
 .card-picture {
     height: 80px;
     line-height: 18px;
@@ -215,6 +230,11 @@
     text-align: center;
     padding: 0;
     width: 16.6%;
+}
+
+.card-charstats-header {
+    text-align: center;
+    padding: 0;
 }
 
 .card-stats-cell {

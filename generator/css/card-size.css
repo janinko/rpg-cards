@@ -42,6 +42,16 @@ page[size="25x35"] {
     height: 3.5in;
 }
 
+page[size="35x5"] {
+    width: 3.5in;
+    height: 5.0in;
+}
+
+page[size="75x5"] {
+    width: 7.5in;
+    height: 5.0in;
+}
+
 /* Default card size */
 .card {
     width:2.5in;
@@ -64,6 +74,16 @@ page[size="25x35"] {
     height:3.5in;
 }
 .card-size-25x35 .card-back-icon {
+    width: 1in;
+    height: 1in;
+}
+
+/* 3.0 x 4.0 */
+.card-size-30x40 {
+    width:3.0in;
+    height:4.0in;
+}
+.card-size-30x40 .card-back-icon {
     width: 1in;
     height: 1in;
 }
