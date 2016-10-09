@@ -470,6 +470,7 @@ function card_pages_generate_style(options) {
         case "Letter": size = "letter portrait"; break;
         case "25x35": size = "2.5in 3.5in"; break;
         case "35x5": size = "3.5in 5.0in"; break;
+        case "75x5": size = "7.5in 5.0in"; break;
         default: size = "auto";
     }
 
