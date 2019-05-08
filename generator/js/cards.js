@@ -14,7 +14,8 @@ function card_default_options() {
         card_arrangement: "doublesided",
         card_size: "25x35",
         card_count: null,
-        icon_inline: true
+        icon_inline: true,
+        small_font: false
     }
 }
 
@@ -299,7 +300,11 @@ var card_element_generators = {
 
 function card_generate_contents(contents, card_data, options) {
     var result = "";
-    result += '<div class="card-content-container">';
+    classname = "card-content-container"; 
+    if (options.small_font) {
+        classname += " small-text";
+    }
+    result += '<div class="'+classname+'">';
     result += contents.map(function (value) {
         var parts = card_data_split_params(value);
         var element_name = parts[0];
