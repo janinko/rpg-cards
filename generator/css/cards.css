@@ -26,6 +26,10 @@
     font-size: 85%;
 }
 
+.smaller-text {
+    font-size: 75%;
+}
+
 .card-back {
 /*     background-color: white; */
     border-radius: 4mm;
@@ -136,7 +140,7 @@
     margin-bottom: 0.0em;
     line-height: 18px;
     font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
-    font-size: 10pt;
+    font-size: 125%;
     font-style: italic;
 }
 .card-monster {
@@ -148,7 +152,7 @@
     margin-bottom: 0.0em;
     line-height: 18px;
     font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
-    font-size: 10pt;
+    font-size: 125%;
     font-style: italic;
 }
 .card-monster-challange {

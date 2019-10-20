@@ -376,6 +376,11 @@ function ui_change_text_size() {
     ui_render_selected_card();
 }
 
+function ui_change_text_size_smaller() {
+    card_options.smaller_font = $(this).is(':checked');
+    ui_render_selected_card();
+}
+
 function ui_sort() {
     $("#sort-modal").modal('show');
 }
@@ -478,6 +483,7 @@ $(document).ready(function () {
     $("#default-title-size").change(ui_change_default_title_size);
     $("#small-icons").change(ui_change_default_icon_size);
     $("#small-text").change(ui_change_text_size);
+    $("#smaller-text").change(ui_change_text_size_smaller);
 
     $(".icon-select-button").click(ui_select_icon);
 
