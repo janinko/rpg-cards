@@ -93,12 +93,15 @@ function card_element_title(card_data, options) {
 function card_element_icon(card_data, options) {
     var icon = card_data_icon_front(card_data, options);
     var classname = "icon";
+    var cclassname = "icon";
     if (options.icon_inline) {
-        classname = "inlineicon";
+        var title_size = card_data.title_size || options.default_title_size || 'normal';
+        classname = "inlineicon-"+title_size;
+        cclassname = "inlineicon";
     }
 
     var result = "";
-    result += '<div class="card-title-' + classname + '-container">';
+    result += '<div class="card-title-' + cclassname + '-container">';
     result += '    <div class="card-title-' + classname + ' icon-' + icon + '">';
     result += '    </div>';
     result += '</div>';

@@ -80,9 +80,57 @@
     border-color: inherit;
 }
 
-.card-title-inlineicon {
+.card-title-inlineicon-16 {
     width: 7mm;
     height: 7mm;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: inherit;
+    border-color: inherit;
+}
+.card-title-inlineicon-15 {
+    width: 7mm;
+    height: 7mm;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: inherit;
+    border-color: inherit;
+}
+.card-title-inlineicon-14 {
+    width: 7mm;
+    height: 7mm;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: inherit;
+    border-color: inherit;
+}
+.card-title-inlineicon-13 {
+    width: 6mm;
+    height: 6mm;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: inherit;
+    border-color: inherit;
+}
+.card-title-inlineicon-12 {
+    width: 6mm;
+    height: 6mm;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: inherit;
+    border-color: inherit;
+}
+.card-title-inlineicon-11 {
+    width: 4mm;
+    height: 4mm;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: inherit;
+    border-color: inherit;
+}
+.card-title-inlineicon-10 {
+    width: 4mm;
+    height: 4mm;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: inherit;
@@ -99,7 +147,6 @@
 }
 
 .card-title {
-    height: 8mm;
     padding-left: 2mm;
     font-family: Lora, 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
     font-variant: small-caps;
@@ -110,30 +157,37 @@
 .card-title-16 {
     font-size: 16pt;
     line-height: 6.5mm;
+    height: 8mm;
 }
 .card-title-15 {
     font-size: 15pt;
     line-height: 6.5mm;
+    height: 8mm;
 }
 .card-title-14 {
     font-size: 14pt;
     line-height: 6.5mm;
+    height: 8mm;
 }
 .card-title-13 {
     font-size: 13pt;
-    line-height: 7mm;
+    line-height: 6mm;
+    height: 7mm;
 }
 .card-title-12 {
     font-size: 12pt;
-    line-height: 7mm;
+    line-height: 6mm;
+    height: 7mm;
 }
 .card-title-11 {
     font-size: 11pt;
-    line-height: 7.5mm;
+    line-height: 4mm;
+    height: 6mm;
 }
 .card-title-10 {
     font-size: 10pt;
-    line-height: 7.5mm;
+    line-height: 3.5mm;
+    height: 5mm;
 }
 .card-subtitle {
     height: 18px;
