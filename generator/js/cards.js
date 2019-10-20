@@ -15,7 +15,8 @@ function card_default_options() {
         card_size: "25x35",
         card_count: null,
         icon_inline: true,
-        small_font: false
+        small_font: false,
+        smaller_font: false
     }
 }
 
@@ -303,6 +304,8 @@ function card_generate_contents(contents, card_data, options) {
     classname = "card-content-container"; 
     if (options.small_font) {
         classname += " small-text";
+    } else if (options.smaller_font) {
+        classname += " smaller-text";
     }
     result += '<div class="'+classname+'">';
     result += contents.map(function (value) {

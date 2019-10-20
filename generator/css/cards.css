@@ -26,6 +26,10 @@
     font-size: 85%;
 }
 
+.smaller-text {
+    font-size: 75%;
+}
+
 .card-back {
 /*     background-color: white; */
     border-radius: 4mm;
